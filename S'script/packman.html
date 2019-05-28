@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Shun'script</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" S <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <style>
+    .highlight {
+      background: linear-gradient(transparent 70%, #ff99ab 70%);
+    }
+
+    .important {
+      font-size: 2em;
+      background: linear-gradient(transparent 50%, #FFF56F 50%);
+    }
+
+    .recommendation {
+      font-size: 1.5em;
+      font-weight: bold;
+      background: linear-gradient(transparent 70%, #417AFC 70%);
+    }
+
+    .starting img {
+      width: 100%;
+      margin: auto;
+      border: solid #FFC100 5px;
+      border-radius: 25px;
+    }
+
+    .starting ul {
+      border: solid 2px #FFC100;
+      padding: 0.5em 1em 0.5em 2.3em;
+      position: relative;
+    }
+
+    .starting ul li {
+      line-height: 1.5;
+      padding: 0.5em 0;
+      list-style-type: none !important;
+    }
+
+    .starting ul li:before {
+      font-family: "Font Awesome 5 Free";
+      content: "\f00c";
+      position: absolute;
+      left: 1em;
+      color: #FFC100;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <i id="open_menu" class="fas fa-bars"></i>
+      <nav id="menu">
+        <i id="close_menu" class="fas fa-times"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="trivias.html">Trivias</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <h1><a href="index.html">Shun'script</a></h1>
+    </div>
+  </header>
+
+<div id="contents">
+  <section class="features">
+    <div class="container">
+
+      <section class="starting">
+        <img src="img/packman/packman.jpg" width="420" height="270" alt="Packman on calculator">
+        <h2>Play packman (games) on your graphing calculator!</h2>
+        <p>
+          In this article, I'm going to explain how to make your calculator more fun to use. Graphing calculators are not cheap! It's not worth it if you use it just for calculations. So I'm gonna explain the way to download as easy to understand as I can.
+        </p>
+        <ul>
+          <li><span class=highlight>Graphing Calculator(TI-84 Plus CE)</span></li>
+          <li><span class="highlight">Culculator charger</span></li>
+          <li><span class="highlight">PC (I'm using mac for this)</span></li>
+        </ul>
+      </section>
+
+      <section class="feature">
+        <img src="img/lifehack.jpg">
+        <p>
+          <span class="recommendation">
+            1, Download the calculator manager
+          </span><br>
+          <a href="https://education.ti.com/en/products/computer-software/ti-connect-ce-sw">https://education.ti.com/en/products/computer-software/ti-connect-ce-sw</a><br>
+          To get started, you need to download a manager app from the official website. Click the link above, it's gonna take you to the download screen
+        </p>
+      </section>
+
+
+    </div>
+  </section>
+</div>
+
+  <!-- footer -->
+  <footer>
+    <a href="https://www.instagram.com/shun0141" target="_blank" style="text-decoration: none;">
+      <img src="img/instagramLogo.png" width="20" height="20" alt="My instagramLogo">
+      Instagram
+    </a>
+    <p>&copy; Shunsuke Ishii</p>
+  </footer>
+
+  <script>
+    (function() {
+      'use strict';
+
+      var openMenu = document.getElementById('open_menu');
+      var closeMenu = document.getElementById('close_menu');
+      var menu = document.getElementById('menu');
+      var contents = document.getElementById('contents');
+
+      openMenu.addEventListener('click', function() {
+        menu.classList.add('shown');
+      });
+
+      closeMenu.addEventListener('click', function() {
+        menu.classList.remove('shown');
+      });
+
+      contents.addEventListener('click', function() {
+        menu.classList.remove('shown');
+      });
+    })();
+  </script>
+
+  <body>
+
+</html>

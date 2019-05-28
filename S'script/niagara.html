@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Shun'script</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" S <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <style>
+
+  .highlight {
+    background: linear-gradient(transparent 70%, #ff99ab 70%);
+  }
+
+  .important {
+    font-size: 2em;
+    background: linear-gradient(transparent 50%, #FFF56F 50%);
+  }
+
+  .recommendation {
+    font-size: 1.5em;
+    font-weight: bold;
+    background: linear-gradient(transparent 70%, #417AFC 70%);
+  }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <i id="open_menu" class="fas fa-bars"></i>
+      <nav id="menu">
+        <i id="close_menu" class="fas fa-times"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="trivias.html">Trivias</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+        <h1><a href="index.html">Shun'script</a></h1>
+    </div>
+  </header>
+
+<div id="contents">
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">Niagara Falls (7/28~7/30/2018)</h2>
+      <section class="feature">
+        <img src="img/niagara/view1.jpg">
+        <p>This time was Niagara falls, Canadian side. I've never been to the American side but I can say Canadian side is better. I mean most of the attractions or the restaurants are gathering in the Canadian side. So without saying, the biggest spot to see is the Falls and you don't really have anything else to do other than that.</p>
+      </section>
+
+      <section class="feature">
+        <img src="img/niagara/view2.jpg">
+        <p>This is a picture from the boat that I waited for a half hour to get tickets and nearly an hour to actually get on a boat. The boat goes really close to the falls that you definitely get wet even if you are wearing a poncho. But I think it depends on where you are on a boat.</p>
+      </section>
+
+      <section class="feature">
+        <img src="img/niagara/view3.jpg">
+        <p>You do have to wait long to get tickets for this 'going behind the falls tour', but you can actually go behind the falls. I don't reccomend doing this for people who don't like closed place because you have to walk through a small tiny tunnel for minutes.
+      </section>
+
+      <section class="feature">
+        <img src="img/niagara/view4.jpg">
+        <p><span class="highlight">Although the fall was cool, I personally didn't love this because I never felt like I was breathing untill I got out of the tunnel and the inside of the tunnel was so moisty.</span> But if you are really interested seeing behind the falls, you should definitely go!</p></p>
+      </section>
+
+      <section class="feature">
+        <img src="img/niagara/view5.jpg">
+        <p>On the last day, we went to the Niagara-on-the-lake that's the downstream the river to have a lunch. You can't really see what it's like from the picture. It's more like a rural area and you should visit here if you are looking for good food. It's much better than what you can find in downtown.</p>
+      </section>
+
+      <section class="feature">
+        <img src="img/niagara/pasta.jpg">
+        <p><span class="recommendation">• Two Sisters Vineyards</span>
+          <a href="https://www.twosistersvineyards.com/">https://www.twosistersvineyards.com/</a><br>
+          This is where I ate pasta. If you are planning to celebrate something, this would be the best place.
+        </p>
+      </section>
+
+
+    </div>
+  </section>
+</div>
+<!-- footer -->
+  <footer>
+    <a href="https://www.instagram.com/shun0141" target="_blank" style="text-decoration: none;">
+      <img src="img/instagramLogo.png" width="20" height="20" alt="My instagramLogo">
+      Instagram
+    </a>
+    <p>&copy; Shunsuke Ishii</p>
+  </footer>
+
+  <script>
+    (function() {
+      'use strict';
+
+      var openMenu = document.getElementById('open_menu');
+      var closeMenu = document.getElementById('close_menu');
+      var menu = document.getElementById('menu');
+      var contents = document.getElementById('contents');
+
+      openMenu.addEventListener('click', function() {
+        menu.classList.add('shown');
+      });
+
+      closeMenu.addEventListener('click', function() {
+        menu.classList.remove('shown');
+      });
+
+      contents.addEventListener('click', function() {
+        menu.classList.remove('shown');
+      });
+    })();
+  </script>
+
+  <body>
+
+</html>

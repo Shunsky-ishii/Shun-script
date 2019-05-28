@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Shun'script</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" S <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <style>
+    .highlight {
+      background: linear-gradient(transparent 70%, #ff99ab 70%);
+    }
+
+    .important {
+      font-size: 2em;
+      background: linear-gradient(transparent 50%, #FFF56F 50%);
+    }
+
+    .recommendation {
+      font-size: 1.5em;
+      font-weight: bold;
+      background: linear-gradient(transparent 70%, #417AFC 70%);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <i id="open_menu" class="fas fa-bars"></i>
+      <nav id="menu">
+        <i id="close_menu" class="fas fa-times"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="trivias.html">Trivias</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+        <h1><a href="index.html">Shun'script</a></h1>
+    </div>
+  </header>
+
+<div id="contents">
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">Washington D.C (3/27~3/30/2019)</h2>
+      <section class="feature">
+        <img src="img/dc/whitehouse.jpg">
+        <p>I went to D.C and it was the second time since I visited for my school trip. Why did I go there again? because my family was looking for somewhere close to Ohio. Even though I've been there once, it felt like it was the first visit because
+          the school trip (first visit) was literally right after I moved to America and I didn't know much English (<span class="highlight">honestly I learned nothing from the guide</span>). </p>
+      </section>
+
+      <section class="feature">
+        <img src="img/dc/wwii.jpg">
+        <p>This time, I was able to decide where to go with no time schedule and here are the places I went:<br>
+          <span class="highlight">• Washington Monument<br>
+            • World War II Memorial<br>
+            • Lincoln memorial<br>
+            • Martin Luther King Jr. Memorial<br>
+            • Holocaust Memorial Museum<br>
+            • Thomas Jefferson Memorial<br>
+            • Mount Vernon (Washington's house)</br>
+          </span>
+        </p>
+      </section>
+
+      <section class="feature">
+        <img src="img/dc/holocaust.jpg">
+        <p>I'm not gonna post all of the pictures here but they were all nice. Also, they are all close to each other that you can go by foot. By the way, if you are planning to go to the Holocaust Museum, you'd better visit early to get a ticket.
+          Tickets are popular and needed to enter the exhibition area.</p>
+      </section>
+
+      <p><span class="important">Food</span> is the first priority for me. All the meals I had during the trip were super delicious. I'm gonna list all the restaurants I went here as recommendation: (I googled popular restaurants before I went)</p>
+
+      <section class="feature">
+        <img src="img/dc/burger2.jpg">
+        <p>
+          <span class="recommendation">• The Hamilton</span>
+            <a href="https://www.thehamiltondc.com/" target="_blank">https://www.thehamiltondc.com/</a><br>
+          I think this is the best restaurant in D.C. This was the best hamburger I've ever eaten though the picture doens't look good.
+        </p>
+      </section>
+
+      <section class="feature">
+        <img src="img/dc/burger1.jpg">
+        <p><span class="recommendation">• Old Ebbitt Grill</span>
+            <a href="https://www.ebbitt.com/" target="_blank">https://www.ebbitt.com/</a><br>
+          Old Ebbitt Grill is an American food restaurant and is the Washington's oldest saloon. I ate a hamburger here again but there's ton of other food too. As a bad point of this restaurant, you smell something like
+          gas caused by gas lamps as soon as you enter the restaurant. It's not that bad and also you would get used to it though.
+        </p>
+      </section>
+
+      <section class="feature">
+        <img src="img/dc/spaghetti.jpg">
+        <p><span class="recommendation">• Carmine's Italian Restaurant</span>
+            <a href="https://www.carminesnyc.com/locations/washington-dc" target="_blank">https://www.carminesnyc.com/</a><br>
+          Carmine's Italian Restaurant is literally an Italian restaurant and everything here is huge. You are supposed to share so just don't order one for yourself. The cleark served my table looked surprised after seeing asians ate whole two
+          plates of spaghetti.
+        </p>
+      </section>
+
+      <p class="description">
+        By the way, for all of the restaurant, you should definitely <span class="highlight">take a reservation hours before you go</span>. Otherwise you either can't have a dinner, or you have to eat at late night.
+      </p>
+
+    </div>
+  </section>
+</div>
+
+  <!-- footer -->
+  <footer>
+    <a href="https://www.instagram.com/shun0141" target="_blank" style="text-decoration: none;">
+      <img src="img/instagramLogo.png" width="20" height="20" alt="My instagramLogo">
+      Instagram
+    </a>
+    <p>&copy; Shunsuke Ishii</p>
+  </footer>
+
+  <script>
+    (function() {
+      'use strict';
+
+      var openMenu = document.getElementById('open_menu');
+      var closeMenu = document.getElementById('close_menu');
+      var menu = document.getElementById('menu');
+      var contents = document.getElementById('contents');
+
+      openMenu.addEventListener('click', function() {
+        menu.classList.add('shown');
+      });
+
+      closeMenu.addEventListener('click', function() {
+        menu.classList.remove('shown');
+      });
+
+      contents.addEventListener('click', function() {
+        menu.classList.remove('shown');
+      })
+
+    })();
+  </script>
+
+  <body>
+
+</html>

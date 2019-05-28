@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Shun'script</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" S <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <i id="open_menu" class="fas fa-bars"></i>
+      <nav id="menu">
+        <i id="close_menu" class="fas fa-times"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="trivias.html">Trivias</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+        <h1><a href="index.html">Shun'script</a></h1>
+    </div>
+  </header>
+
+<!-- welcome -->
+<div id="contents">
+
+<!-- Blogs -->
+  <section class="more">
+    <div class="container">
+      <h2 class="section-title">Blogs</h2>
+      <p style="opacity:.7;">- Check out some of the places I've visited on vacation -</p>
+      <div class="flex">
+
+        <!-- dc -->
+        <article class="more-item">
+          <img src="img/dc/dc.jpg" alt="dc">
+          <h2>Washington D.C</h2>
+          <div class="nav-to-blog">
+            <a href="dc.html">
+              <p><i class="fas fa-external-link-alt"></i>Go check this</p>
+            </a>
+          </div>
+        </article>
+
+        <!-- iceland -->
+        <article class="more-item">
+          <img src="img/iceland/iceland.jpg" alt="reykjavik">
+          <h2>Reykjavik</h2>
+          <div class="nav-to-blog">
+            <a href="iceland.html">
+              <p><i class="fas fa-external-link-alt"></i>Go check this</p>
+            </a>
+          </div>
+        </article>
+
+        <!-- falls -->
+        <article class="more-item">
+          <img src="img/niagara/niagara.jpg" alt="niagara falls">
+          <h2>Niagara Falls</h2>
+          <div class="nav-to-blog">
+            <a href="niagara.html">
+              <p><i class="fas fa-external-link-alt"></i>Go check this</p>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+<!-- footer -->
+  <footer>
+    <a href="https://www.instagram.com/shun0141" target="_blank" style="text-decoration: none;">
+      <img src="img/instagramLogo.png" width="20" height="20" alt="My instagramLogo">
+      Instagram
+    </a>
+    <p>&copy; Shunsuke Ishii</p>
+  </footer>
+</div>
+
+  <script>
+    (function() {
+      'use strict';
+
+      var openMenu = document.getElementById('open_menu');
+      var closeMenu = document.getElementById('close_menu');
+      var menu = document.getElementById('menu');
+      var contents = document.getElementById('contents');
+
+      openMenu.addEventListener('click', function() {
+        menu.classList.add('shown');
+      });
+
+      closeMenu.addEventListener('click', function() {
+        menu.classList.remove('shown');
+      });
+
+      contents.addEventListener('click', function() {
+        menu.classList.remove('shown');
+      });
+
+    })();
+  </script>
+
+  <body>
+
+</html>
